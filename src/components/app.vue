@@ -100,6 +100,23 @@
   import routes from '../js/routes.js';
   import store from '../js/store';
 
+  import firebase from 'firebase';
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD0J8lwK_WNARZ5avM2bt7vgG0-g4ehVPE",
+    authDomain: "lets-chat-2cb22.firebaseapp.com",
+    projectId: "lets-chat-2cb22",
+    storageBucket: "lets-chat-2cb22.appspot.com",
+    messagingSenderId: "1097136333523",
+    appId: "1:1097136333523:web:106d89ae019bff50cfea26",
+    measurementId: "G-3XF17DK7GZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
   export default {
     setup() {
       const device = getDevice();
