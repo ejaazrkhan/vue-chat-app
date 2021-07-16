@@ -2,8 +2,15 @@
   <f7-page name="signup">
     <f7-navbar title="Sign Up" back-link="Back"></f7-navbar>
 
-    <div class="wrapper">
-        <img data-src="https://www.dgvaishnavcollege.edu.in/dgvaishnav-c/uploads/2021/01/dummy-profile-pic.jpg" alt="" class="lazy">
+    <div class="wrapper text-align-center">
+        <img 
+            :src="image_url" 
+            alt="" 
+            class="lazy"
+            width="150"
+            height="150"
+            style="border-radius: 50%; border: 1px solid #f7f7f7;"
+        />
     </div>
 
     <f7-list no-hairlines-md>
